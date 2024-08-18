@@ -1,0 +1,104 @@
+/* Contenedor Principal del Hero */
+.hero-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Fondo Animado Tron */
+  .hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.2), transparent),
+                url('https://example.com/your-tron-background.jpg');
+    background-size: cover;
+    z-index: -1;
+    animation: tron-bg 8s linear infinite;
+  }
+  
+  /* Animación de Fondo */
+  @keyframes tron-bg {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 100%;
+    }
+  }
+  
+  /* Contenido del Hero */
+  .hero-content {
+    text-align: center;
+    color: #00ffff;
+    z-index: 1;
+    padding: 0 20px;
+  }
+  
+  /* Título Principal */
+  .hero-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px #00ffff;
+    animation: neon-glow 1.5s infinite alternate;
+  }
+  
+  /* Subtítulo */
+  .hero-subtitle {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  /* Botones del Hero */
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Estilos de los Botones */
+  .hero-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .hero-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff;
+  }
+  
+  .hero-button-alt {
+    background-color: transparent;
+    color: #00ffff;
+  }
+  
+  .hero-button-alt:hover {
+    background-color: #00ffff;
+    color: #000;
+  }
+  
+  /* Efecto de brillo en el Título */
+  @keyframes neon-glow {
+    from {
+      text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
+    }
+    to {
+      text-shadow: 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff;
+    }
+  }
+  

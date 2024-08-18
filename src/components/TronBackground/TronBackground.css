@@ -1,0 +1,11 @@
+/* TronBackground.css */
+.canvas-container {
+    width: 100vw; /* Ancho completo del viewport */
+    height: 100vh; /* Altura completa del viewport */
+    position: fixed; /* Fijo para que se quede en su lugar */
+    top: 0; /* Sin margen desde el top */
+    left: 0; /* Sin margen desde el left */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    z-index: -1; /* Asegura que esté detrás de otros elementos */
+  }
+  

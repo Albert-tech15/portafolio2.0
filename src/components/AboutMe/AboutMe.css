@@ -1,0 +1,54 @@
+about-me {
+    padding: 50px 20px;
+    background-color: #111;
+    color: #00ffff;
+    text-align: center;
+}
+
+.about-me-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.about-me-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.about-me-text {
+    max-width: 600px;
+    margin-bottom: 2opx;
+    text-align: left;
+}
+
+.about-me-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #00ffff;
+}
+
+.about-me-skills {
+    margin-top: 40px;
+}
+
+.about-me-skills h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.about-me-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me-skills li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
